@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/fragment_breaking_news_scene"
+    tools:context=".ui.fragment.BreakingNewsFragment">
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/paginationProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/choiceScrollView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:alpha="1"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paginationProgressBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/selectCountryButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:drawableLeft="@drawable/ic_world"
+                android:text="country" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="2dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/black" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleLine="true"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/generalChip"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="general" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/businessChip"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="business" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/entertainmentChip"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="entertainment" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/healthChip"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="health" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/scienceChip"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="science" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/sportChip"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sport" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/technologyChip"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="technology" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBreakingNews"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choiceScrollView" />
+</androidx.constraintlayout.motion.widget.MotionLayout>
