@@ -26,27 +26,32 @@ const val API_KEY = "Your Api Key"
 
 ### Home 
 
-
+<img src="GIF/home.gif" width="300">
 
 This screen shows the country's breaking news and also give option to choose your favorite news
 
 ### Slect Country
 
+<img src="GIF/select%20country.gif" width="300">
+
 This screen are use to select country than it will show news according to your country
 
 ### Save News
 
+<img src="GIF/save%20news.gif" width="300">
 
 This screen are used to save news
 
 
 ### Show Save News
 
+<img src="GIF/show%20news.gif" width="300">
 
 This screen are show save news and you can also search your save news 
 
 
 ### Search News
 
+<img src="GIF/search%20news.gif" width="300">
 
 This screen are use to search new 
