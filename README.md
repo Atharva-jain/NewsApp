@@ -1,6 +1,6 @@
 # NewsApp
 Project Overview
-the goal is to crearte a News App Which gives a user regularly-Beaking news from the internet related to a particular country and category.
+the goal is to create a News App Which gives a user regularly-Beaking news from the internet related to a particular country and category.
 News app can save the news so that you can watch it later and also you can search news. in this project,
 use [News API](https://newsapi.org/). This is a well-maintained API which returns information in a JSON Format
 ### API key Note
@@ -30,7 +30,7 @@ const val API_KEY = "Your Api Key"
 
 This screen shows the country's breaking news and also give option to choose your favorite news
 
-### Slect Country
+### Select Country
 
 <img src="GIF/select%20country.gif" width="300">
 
