@@ -16,6 +16,7 @@ const val API_KEY = "Your Api Key"
 * Retrofit
 * Room Database
 * Navigation Drawer
+* View Binding
 * JSON Parsing
 * Fragment
 * Glide
